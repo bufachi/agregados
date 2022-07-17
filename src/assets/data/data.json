@@ -1,0 +1,74 @@
+{
+	"encabezado": [{
+		"name": "Jorge Luis Saal",
+		"Image": "encabezado.png",
+		"backimage": " https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-black-shading-red-shard-geometry-banner-background-shadingred-debrisred-glowgeometry-image_80184.jpg",
+		"foto": "captura.png"
+
+	}],
+
+	"educacion": [{
+		"dateOfBirth": "06/06/1960",
+		"aboutMe": "Ingeniero en Sistemas de Informacion",
+		"mail": "jorgesaal@gmail.com",
+		"backImage": "",
+		"image": "",
+		"position": "informatico",
+		"ubication": "Buenos Aires Argentina"
+
+	}],
+
+
+	"experiencia": [{
+		    "codigo":"1",
+			"posicion ": "Ingeniero en Sistemas de Informacion",
+			"company": "Correo Argentino",
+			"img": "",
+			"mode": "Free Lance",
+			"start": "1983",
+			"end": "actualidad",
+			"timeElapsed": "39 años",
+			"Place": "Buenos Aires"
+		},
+
+		{
+			"codigo":"2",
+			"posicion ": "Analista de Sistemas  de Informacion",
+			"company": "Alson",
+			"img": "",
+			"mode": "Free Lance",
+			"start": "1981",
+			"end": "1982",
+			"timeElapsed": "2 años",
+			"Place": "Buenos Aires"
+		}
+	],
+
+	"proyecto": [{
+		"name": "Porfolio Web FullStack",
+		"mesInicio": "mayo",
+		"AñoInicio": "2022",
+		"mesFin": "agosto",
+		"AñoFin": "2022",
+		"url": "",
+		"Descripcion": "Proyecto trabajando en desarrollo Full Stack"
+
+	}],
+
+	"habilidades": [{
+		"name": "Resolucion de Problemas",
+		"AnioFin": "2022"
+	}],
+
+
+	"persona": [{
+		"dateOfBirth": "06/06/1960",
+		"aboutMe": "Ingeniero en Sistemas de Informacion",
+		"mail": "jorgesaal@gmail.com",
+		"backImage": "",
+		"image": "",
+		"position": "informatico",
+		"ubication": "Buenos Aires Argentina"
+
+	}]
+}

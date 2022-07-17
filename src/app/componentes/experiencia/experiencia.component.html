@@ -1,0 +1,81 @@
+<div class="container">
+  <div id="experiencia">
+    <h5>Experiencia</h5>
+
+
+    <div>
+      <ul class="items-list" id="expList">
+        <li *ngFor="let exper of experienciaList">
+          <div class="codigo">{{exper.codigo}}</div>
+          <div class="posicion">{{exper.posicion}}</div>
+          <div class="company">{{exper.company}}</div>
+          <div class="img"></div>
+          <div class="mode">{{exper.mode}}</div>
+          <div class="start">{{exper.start}}</div>
+          <div class="end">{{exper.end}}</div>
+          <div class="timeElapsed">{{exper.timeElapsed}}</div>
+          <div class="Place">{{exper.Place}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>
+<div>
+  <h1>Experiencia</h1>
+    <table border="1" *ngIf="hayRegistros(); else sinexperiencia">
+      <tr>
+        <td>Codigo</td><td>posicion</td><td>company</td><td>img</td><td>mode</td><td>start</td> <td>end</td><td>timeElapsed</td><td>Place</td><td>Borrar</td><td>Seleccionar</td>
+      </tr>
+      <tr *ngFor="let exper of experiencias">
+        <td>{{exper.codigo}}</td>
+        <td>{{exper.posicion}}</td>
+        <td>{{exper.company}}</td>
+        <td>{{exper.img}}</td>
+        <td>{{exper.mode}}</td>
+        <td>{{exper.start}}</td>
+        <td>{{exper.end}}</td>
+        <td>{{exper.timeElapsed}}</td>
+        <td>{{exper.Place}}</td>
+        <td><button (click)="borrar(exper.codigo)">Borrar?</button></td>
+        <td><button (click)="seleccionar(exper)">Seleccionar</button></td>        
+      </tr>
+    </table>
+    <ng-template #sinaexperiencia><p>No hay experiencia.</p></ng-template>
+    <div>
+      <p>
+        Codigo:<input type="number" [(ngModel)]="exper.codigo" />
+      </p>
+      <p>
+        descripcion:<input type="text" [(ngModel)]="exper.posicion" />
+      </p>
+      <p>
+        precio:<input type="number" [(ngModel)]="exper.company" />
+      </p>            
+
+      <p>
+        Codigo:<input type="number" [(ngModel)]="exper.imgo" />
+      </p>
+      <p>
+        descripcion:<input type="text" [(ngModel)]="exper.mode" />
+      </p>
+      <p>
+        precio:<input type="number" [(ngModel)]="exper.start" />
+      </p>            
+      <p>
+        Codigo:<input type="number" [(ngModel)]="exper.end" />
+      </p>
+      <p>
+        descripcion:<input type="text" [(ngModel)]="exper.timeElapsed" />
+      </p>
+      <p>
+        precio:<input type="number" [(ngModel)]="exper.Place" />
+      </p>            
+
+
+      <p><button (click)="agregar()">Agregar</button>
+      <button (click)="modificar()">Modificar</button></p>
+    </div>
+
+    
